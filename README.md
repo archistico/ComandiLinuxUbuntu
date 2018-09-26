@@ -12,3 +12,4 @@ Principali comandi Linux Ubuntu
 
 #### Tools recuperare spazio
 ``df -h``
+``ncdu /``
