@@ -11,5 +11,5 @@ Principali comandi Linux Ubuntu
 ``grep -rnw *.php -e 'TEXT'``
 
 #### Tools recuperare spazio
-``df -h``
-``ncdu /``
+``df -h``  
+``ncdu /``  
