@@ -1,4 +1,4 @@
-# ComandiLinuxUbuntu
+# Comandi Linux Ubuntu
 Principali comandi Linux Ubuntu
 
 #### Numero file in una cartella e sottodirectory
