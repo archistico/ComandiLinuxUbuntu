@@ -13,3 +13,6 @@ Principali comandi Linux Ubuntu
 #### Tools recuperare spazio
 ``df -h``  
 ``ncdu /``  
+
+#### Rimuovi exif metadata dai jpg sia nella cartella che nelle sub
+``exiftool -all= -r -overwrite_original -ext jpg .``  
