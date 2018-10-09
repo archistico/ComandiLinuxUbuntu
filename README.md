@@ -18,4 +18,11 @@ Principali comandi Linux Ubuntu
 ``exiftool -all= -r -overwrite_original -ext jpg .``  
 
 #### Sincronizzazione cartelle
-``rsync -av ./demo/ ./demo2``  
+``rsync -avhp ./demo/ ./demo2``  
+z se voglio che comprima 
+n oppure --dry-run se voglio vedere prima cosa fa senza fare nulla  
+--delete se voglio che cancelli nella destinazione i file in più  
+--exclude=nomefile per escludere in remoto un file da non cancellare (tipo configurazione)  
+per l'invio su un ssh, mi connnetto e poi:  
+``rsync -avhp --delete ./demo/ emilie@prova.com:~/demo2``  
+``rsync -avhp --delete ./demo/ -e "ssh -p 3000" emilie@prova.com:~/demo2``   
