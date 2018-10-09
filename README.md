@@ -16,3 +16,6 @@ Principali comandi Linux Ubuntu
 
 #### Rimuovi exif metadata dai jpg sia nella cartella che nelle sub
 ``exiftool -all= -r -overwrite_original -ext jpg .``  
+
+#### Sincronizzazione cartelle
+``rsync -av ./demo/ ./demo2``  
