@@ -26,3 +26,6 @@ n oppure --dry-run se voglio vedere prima cosa fa senza fare nulla
 per l'invio su un ssh, mi connnetto e poi:  
 ``rsync -avhp --delete ./demo/ emilie@ip:~/demo2``  
 ``rsync -avhp --delete ./demo/ -e "ssh -p 3000" emilie@ip:~/demo2``   
+  
+#### Raspberry
+sudo rpi-update
