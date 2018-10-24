@@ -29,3 +29,7 @@ per l'invio su un ssh, mi connnetto e poi:
   
 #### Raspberry
 sudo rpi-update
+  
+#### Salva output in file ( >> append )
+ls > output
+ls >> output
