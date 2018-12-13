@@ -33,3 +33,11 @@ sudo rpi-update
 #### Salva output in file ( >> append )
 ls > output
 ls >> output
+
+#### GIT
+git init  
+git add .  
+git commit -m'...'  
+git push origin master  
+git pull origin master  
+git config credential.helper 'store'  
