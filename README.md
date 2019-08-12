@@ -41,3 +41,7 @@ git commit -m'...'
 git push origin master  
 git pull origin master  
 git config credential.helper 'store'  
+
+#### Vagrant
+vagrant box update
+vagrant box remove laravel/homestead --box-version=7.2.1 
