@@ -49,13 +49,15 @@ git clone https://github.com/laravel/homestead.git Homestead
 cd Homestead  
 bash init.sh  
 ssh-keygen -t rsa -C “your_email@example.com”  
-``authorize: c:/Users/USER_NAME/.ssh/id_rsa.pubkeys:``  
-``— c:/Users/USER_NAME/.ssh/id_rsa``  
+```
+authorize: c:/Users/USER_NAME/.ssh/id_rsa.pubkeys:  
+— c:/Users/USER_NAME/.ssh/id_rsa  
+```
 vagrant box update  
 vagrant box remove laravel/homestead --box-version=7.2.1   
   
 .bash-profile
-``
+```  
 # Some shortcuts for easier navigation & access  
 alias ..="cd .."  
 alias vm="ssh vagrant@127.0.0.1 -p 2222"  
@@ -63,4 +65,5 @@ alias vm="ssh vagrant@127.0.0.1 -p 2222"
 # Homestead shortcut  
 function homestead() {  
     ( cd ~/Homestead && vagrant $* )  
-}``  
+}    
+```  
