@@ -67,3 +67,6 @@ function homestead() {
     ( cd ~/Homestead && vagrant $* )  
 }    
 ```  
+#### Cancellare file con caratteri strani
+`ls -ali`
+`sudo find . -inum <numero> -exec rm -i {} \;`
