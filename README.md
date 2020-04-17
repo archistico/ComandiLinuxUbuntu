@@ -68,5 +68,5 @@ function homestead() {
 }    
 ```  
 #### Cancellare file con caratteri strani
-`ls -ali`
-`sudo find . -inum <numero> -exec rm -i {} \;`
+`ls -ali`  
+`sudo find . -inum <numero> -exec rm -i {} \;`  
