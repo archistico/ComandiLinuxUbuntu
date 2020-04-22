@@ -70,3 +70,38 @@ function homestead() {
 #### Cancellare file con caratteri strani
 `ls -ali`  
 `sudo find . -inum <numero> -exec rm -i {} \;`  
+
+
+## CREAZIONE UBUNTU SERVER IN VIRTUALBOX
+sudo rm -rf /var/www  
+sudo ln -s /home/emilie/condivisa /var/www  
+sudo usermod -a -G vboxsf www-data  
+  
+Riavviare la macchina  
+  
+impostazioni virtualbox  
+  
+in file->gestione reti host  
+192.168.2.100 e no DHCP  
+(l'indirizzo della macchina avrà un numero in più)  
+
+scheda 1 NAT  
+scheda 2 Scheda solo host   
+  
+file: /etc/netplan/emilie.yaml  
+network:  
+    version: 2  
+    renderer: networkd  
+    ethernets:  
+        enp0s3:  
+            dhcp4: true  
+        enp0s8:  
+            dhcp4: no  
+            dhcp6: no  
+            addresses: [192.168.2.101/24]  
+            nameservers:   
+                 addresses: [8.8.8.8, 8.8.4.4]  
+                 
+  
+sudo netplan generate  
+sudo netplan apply  
