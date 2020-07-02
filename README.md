@@ -105,3 +105,16 @@ network:
   
 sudo netplan generate  
 sudo netplan apply  
+
+# ALIAS
+
+alias todo='python /c/Script/todo.py'
+alias gadd='git add .'
+alias gpush='git push origin master'
+alias gstatus='git status'
+alias gfetch='git fetch --all'
+alias greset='git reset --hard origin/master'
+alias reloadbash='source ~/.bashrc'
+alias phpserver='php -S 127.0.0.1:8000'
+alias cd..='cd ..'
+alias git-bash='/git-bash.exe & > /dev/null 2&>1'
