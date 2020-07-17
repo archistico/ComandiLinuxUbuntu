@@ -119,3 +119,8 @@ alias phpserver='php -S 127.0.0.1:8000'
 alias cd..='cd ..'
 alias git-bash='/git-bash.exe & > /dev/null 2&>1'
 ```  
+
+# Youtube-dl
+```  
+youtube-dl.exe -x --audio-format mp3 -c -w -i PLR73VO6XmiXX8yzysPuY1ssEBMcR5k2hT
+```  
