@@ -42,6 +42,12 @@ git push origin master
 git pull origin master  
 git config credential.helper 'store'  
 
+##### resettare le modifiche locali
+```
+git reset --hard
+git pull origin master
+```
+
 #### Vagrant
 vagrant box add laravel/homestead  
 cd ~  
