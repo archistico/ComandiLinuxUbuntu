@@ -129,4 +129,5 @@ alias git-bash='/git-bash.exe & > /dev/null 2&>1'
 # Youtube-dl
 ```  
 youtube-dl.exe -x --audio-format mp3 -c -w -i PLR73VO6XmiXX8yzysPuY1ssEBMcR5k2hT
+./youtube-dl.exe --ffmpeg-location "ffmpeg/bin" -x --audio-format mp3 -c -w -i PLR73VO6XmiXWM8h_9tLIZOSLEMpkjGoZs
 ```  
