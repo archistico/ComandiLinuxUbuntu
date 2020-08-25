@@ -131,3 +131,13 @@ alias git-bash='/git-bash.exe & > /dev/null 2&>1'
 youtube-dl.exe -x --audio-format mp3 -c -w -i PLR73VO6XmiXX8yzysPuY1ssEBMcR5k2hT
 ./youtube-dl.exe --ffmpeg-location "ffmpeg/bin" -x --audio-format mp3 -c -w -i PLR73VO6XmiXWM8h_9tLIZOSLEMpkjGoZs
 ```  
+
+# LINUX 
+file per IP statico dato da impostazione MAC address da router  
+/etc/network/interfaces
+
+```  
+auto lo
+iface lo inet loopback
+iface eth0 inet manual
+```  
