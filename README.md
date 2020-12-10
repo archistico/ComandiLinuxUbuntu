@@ -48,6 +48,10 @@ git reset --hard
 git pull origin master
 ```
 
+##### windows cartelle case-sensitive
+fsutil.exe file setCaseSensitiveInfo "C:\my folder" enable
+deve essere fatto su tutti i subfolder
+
 #### Vagrant
 vagrant box add laravel/homestead  
 cd ~  
